@@ -7,6 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ACFloatingTextField.h"
+#import "SellerDashboardScreen.h"
+#import "Utils.h"
+#import "AFNetworking.h"
+#import "MBProgressHUD.h"
+#import "Service.h"
 
 @interface ForgotPasswordScreen : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *emailtextField;

@@ -67,7 +67,7 @@
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     
     
-    NSDictionary *parameters = @{@"user_id": [[[NSUserDefaults standardUserDefaults]valueForKey:@"UserID"]objectAtIndex:0]};
+    NSDictionary *parameters = @{@"user_id": [[NSUserDefaults standardUserDefaults]valueForKey:@"UserID"]};
     [manager POST:urlString parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         //Sample logic to check login status

@@ -118,12 +118,12 @@
                                             
                                             [self.passwordTF showError];
                                         }
-                                        else {
+                                       /* else {
                                             
                                             if ([self.paypalEmailTF.text isEqualToString:@""]) {
                                                 
                                                 [self.paypalEmailTF showError];
-                                            }
+                                            }*/
                                         else {
                                             
                                             [self webserviceForSignUp];
@@ -137,7 +137,7 @@
             }
         }
     }
-    }
+    
     
 }
 

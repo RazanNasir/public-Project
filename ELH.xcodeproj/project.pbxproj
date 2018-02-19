@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		059202F4203B652400BE05A5 /* BankScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 059202F3203B652400BE05A5 /* BankScreen.m */; };
+		059202F7203B667400BE05A5 /* PayPalScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 059202F6203B667400BE05A5 /* PayPalScreen.m */; };
 		0596DA4D1F42444C00B2066C /* CategoryScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 0596DA4C1F42444C00B2066C /* CategoryScreen.m */; };
 		0596DA511F424F7700B2066C /* productwiseScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 0596DA501F424F7700B2066C /* productwiseScreen.m */; };
 		0596DA551F424FE400B2066C /* ALScrollViewPaging.m in Sources */ = {isa = PBXBuildFile; fileRef = 0596DA541F424FE400B2066C /* ALScrollViewPaging.m */; };
@@ -104,6 +106,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		059202F2203B652400BE05A5 /* BankScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankScreen.h; sourceTree = "<group>"; };
+		059202F3203B652400BE05A5 /* BankScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankScreen.m; sourceTree = "<group>"; };
+		059202F5203B667400BE05A5 /* PayPalScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayPalScreen.h; sourceTree = "<group>"; };
+		059202F6203B667400BE05A5 /* PayPalScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayPalScreen.m; sourceTree = "<group>"; };
 		0596DA4B1F42444C00B2066C /* CategoryScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryScreen.h; sourceTree = "<group>"; };
 		0596DA4C1F42444C00B2066C /* CategoryScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryScreen.m; sourceTree = "<group>"; };
 		0596DA4F1F424F7700B2066C /* productwiseScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = productwiseScreen.h; sourceTree = "<group>"; };
@@ -767,6 +773,10 @@
 				9BF245BD1F798A3D008A98E9 /* BankDetailsScreen.m */,
 				9BF245B91F798641008A98E9 /* ProfileDetailsScreen.h */,
 				9BF245BA1F798641008A98E9 /* ProfileDetailsScreen.m */,
+				059202F2203B652400BE05A5 /* BankScreen.h */,
+				059202F3203B652400BE05A5 /* BankScreen.m */,
+				059202F5203B667400BE05A5 /* PayPalScreen.h */,
+				059202F6203B667400BE05A5 /* PayPalScreen.m */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -888,6 +898,7 @@
 				9BF245B71F797FBD008A98E9 /* ProfileScreen.m in Sources */,
 				9BC39C711F211B3E000AD520 /* SWRevealViewController.m in Sources */,
 				4364C0CC1F6C801C005E9532 /* ProductDescriptionScreen.m in Sources */,
+				059202F4203B652400BE05A5 /* BankScreen.m in Sources */,
 				43B8CF481F77A0C700E5DC0E /* SoldProductScreen.m in Sources */,
 				43CA95A91F4635C3005701A6 /* SDWebImageCompat.m in Sources */,
 				9B9DE72E1F1E7E7C00E9A827 /* main.m in Sources */,
@@ -916,6 +927,7 @@
 				9BEE9AB11F27D2120000DD5A /* ImagesNextScreen.m in Sources */,
 				43CA95AE1F4635C3005701A6 /* SDWebImagePrefetcher.m in Sources */,
 				43CA95A41F4635C3005701A6 /* MKAnnotationView+WebCache.m in Sources */,
+				059202F7203B667400BE05A5 /* PayPalScreen.m in Sources */,
 				4311E2F91F2D23B000687D0B /* AFURLRequestSerialization.m in Sources */,
 				4311E2F71F2D23B000687D0B /* AFSecurityPolicy.m in Sources */,
 				4311E2F51F2D23B000687D0B /* AFHTTPSessionManager.m in Sources */,

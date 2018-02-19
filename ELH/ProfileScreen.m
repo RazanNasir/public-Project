@@ -49,6 +49,6 @@
 
 - (IBAction)bankInfoButtonAction:(id)sender {
     
-    [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"BankDetailsScreen"] animated:YES];
+    [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"BankScreen"] animated:YES];
 }
 @end
