@@ -197,6 +197,24 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 - (IBAction)logoutAction:(id)sender {
+    NSString *title;
+    
+    if([[[NSUserDefaults standardUserDefaults]valueForKey:@"LogInDoneBuyer"]isEqualToString:@"NO"] && [[[NSUserDefaults standardUserDefaults]valueForKey:@"isComingFrom"]isEqualToString:@"firstScreenBuy"])
+    {
+        title = @"Logout";
+
+    }
+    else if ([[[NSUserDefaults standardUserDefaults]valueForKey:@"LogInDoneSeller"]isEqualToString:@"YES"] && [[[NSUserDefaults standardUserDefaults]valueForKey:@"isComingFrom"]isEqualToString:@"firstScreenBuy"])
+    {
+        title = @"Logout";
+
+    }
+    else{
+        title = @"Login";
+
+    }
+    
+    
     UIAlertController* alert = [UIAlertController
                                 alertControllerWithTitle:nil      //  Must be "nil", otherwise a blank title area will appear above our two buttons
                                 message:nil
@@ -207,21 +225,34 @@
                              style:UIAlertActionStyleCancel
                              handler:^(UIAlertAction * action)
                              {
-                                 //  UIAlertController will automatically dismiss the view
+                                 //  UIAlertController will automatically dismiss the
                              }];
     
     UIAlertAction *bedroomFurniture = [UIAlertAction
-                                       actionWithTitle:@"Logout"
+                                       actionWithTitle:title
                                        style:UIAlertActionStyleDefault
                                        handler:^(UIAlertAction * action)
                                        {
-                                           [[NSUserDefaults standardUserDefaults]setValue:@"NO" forKey:@"LogInDoneBuyer"];
-                                           [[NSUserDefaults standardUserDefaults]setValue:@"NO" forKey:@"LogInDoneSeller"];
+                                           
+                                           if ([[[NSUserDefaults standardUserDefaults]valueForKey:@"LogInDoneBuyer"]isEqualToString:@"NO"] || [[NSUserDefaults standardUserDefaults]valueForKey:@"LogInDoneBuyer"] == nil||[[[NSUserDefaults standardUserDefaults]valueForKey:@"LogInDoneSeller"]isEqualToString:@"NO"] || [[NSUserDefaults standardUserDefaults]valueForKey:@"LogInDoneSeller"] == nil) {
+                                               
+                                               [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"sellerLoginScreen"] animated:YES];
 
-                                            [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"FirstViewScreen"] animated:YES];
+                                              
+                                           }
+                                           else
+                                           {
+                                               
+                                               [[NSUserDefaults standardUserDefaults]setValue:@"NO" forKey:@"LogInDoneBuyer"];
+                                               [[NSUserDefaults standardUserDefaults]setValue:@"NO" forKey:@"LogInDoneSeller"];
+                                               
+                                               [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"FirstViewScreen"] animated:YES];
+                                               
+                                               
+                                           }
                                            
                                        }];
-
+    
     
     [alert addAction:cancel];
     [alert addAction:bedroomFurniture];

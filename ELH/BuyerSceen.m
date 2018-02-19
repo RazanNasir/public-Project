@@ -343,6 +343,17 @@
     }
 }
 - (IBAction)logoutAction:(id)sender {
+    NSString *title;
+    
+    if ([[[NSUserDefaults standardUserDefaults]valueForKey:@"LogInDoneBuyer"]isEqualToString:@"YES"] ||[[[NSUserDefaults standardUserDefaults]valueForKey:@"LogInDoneSeller"]isEqualToString:@"YES"] ) {
+        
+        title = @"Logout";
+    }
+    else
+    {
+        title = @"Login";
+    }
+    
     UIAlertController* alert = [UIAlertController
                                 alertControllerWithTitle:nil      //  Must be "nil", otherwise a blank title area will appear above our two buttons
                                 message:nil
@@ -357,14 +368,24 @@
                              }];
     
     UIAlertAction *bedroomFurniture = [UIAlertAction
-                                       actionWithTitle:@"Logout"
+                                       actionWithTitle:title
                                        style:UIAlertActionStyleDefault
                                        handler:^(UIAlertAction * action)
                                        {
+                                           
+                                           if ([[[NSUserDefaults standardUserDefaults]valueForKey:@"LogInDoneBuyer"]isEqualToString:@"NO"] ||[[[NSUserDefaults standardUserDefaults]valueForKey:@"LogInDoneSeller"]isEqualToString:@"NO"] ) {
+                                               
                                            [[NSUserDefaults standardUserDefaults]setValue:@"NO" forKey:@"LogInDoneBuyer"];
                                            [[NSUserDefaults standardUserDefaults]setValue:@"NO" forKey:@"LogInDoneSeller"];
 
                                            [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"FirstViewScreen"] animated:YES];
+                                           }
+                                           else
+                                           {
+                                               [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"sellerLoginScreen"] animated:YES];
+
+                                               
+                                           }
                                            
                                        }];
     

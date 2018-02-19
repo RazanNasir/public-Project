@@ -115,7 +115,17 @@
                         
                         if ([[dict valueForKey:@"group_id"]integerValue] == 2) {
                             [[NSUserDefaults standardUserDefaults] setObject:@"YES" forKey:@"LogInDoneSeller"];
-                            if ([[[NSUserDefaults standardUserDefaults]valueForKey:@"isComingFrom"]isEqualToString:@"firstScreen"]) {
+                            [[NSUserDefaults standardUserDefaults] setObject:@"NO" forKey:@"LogInDoneBuyer"];
+
+                            if (
+                                [[[NSUserDefaults standardUserDefaults]valueForKey:@"isComingFrom"]isEqualToString:@"firstScreenBuy"] ) {
+                             //   [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"SellerDashboardScreen"] animated:YES];
+                                
+                                [self.navigationController popViewControllerAnimated:YES];
+
+                            }
+                            else if ([[[NSUserDefaults standardUserDefaults]valueForKey:@"isComingFrom"]isEqualToString:@"firstScreen"])
+                            {
                                 [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"SellerDashboardScreen"] animated:YES];
 
                             }
@@ -129,6 +139,7 @@
                         else
                         {
                         [[NSUserDefaults standardUserDefaults] setObject:@"YES" forKey:@"LogInDoneBuyer"];
+                            [[NSUserDefaults standardUserDefaults] setObject:@"NO" forKey:@"LogInDoneSeller"];
 
                             [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"productwiseScreen"] animated:YES];
 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="3l7-cd-k2k">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="3l7-cd-k2k">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,7 +14,7 @@
             <objects>
                 <viewController title="Splash Screen" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" id="fjO-RU-5c0">
@@ -65,7 +65,7 @@
             <objects>
                 <viewController storyboardIdentifier="FirstViewScreen" title="First Screen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rRZ-Px-vjI" customClass="FirstViewScreen" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lP9-wL-hSG">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" id="b4p-Sw-aSI">
@@ -157,7 +157,7 @@
             <objects>
                 <viewController storyboardIdentifier="sellerLoginScreen" title="Seller login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cB8-Sl-FZ9" customClass="sellerLoginScreen" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UKQ-wI-ZKx">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="headerimages" id="4QZ-6Q-Wa1">
@@ -305,7 +305,7 @@
             <objects>
                 <viewController storyboardIdentifier="MoverScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YCw-6P-JIp" customClass="MoverScreen" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JhG-hc-amT">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fMO-uP-FJM">
@@ -422,7 +422,7 @@
             <objects>
                 <viewController storyboardIdentifier="ImagesNextScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QaL-RV-hPa" customClass="ImagesNextScreen" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j7E-OY-55s">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="VB5-C7-yCc">
@@ -510,7 +510,7 @@
                                         </connections>
                                     </textField>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="mobile" id="a0F-6l-UiV">
-                                        <rect key="frame" x="15" y="106" width="29" height="30"/>
+                                        <rect key="frame" x="15" y="105" width="29" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Moving from" minimumFontSize="17" id="uf1-Bj-3hp" customClass="ACFloatingTextField">
@@ -633,7 +633,7 @@
             <objects>
                 <viewController storyboardIdentifier="SellerDashboardScreen" title="Seller Dashboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Edu-Z9-Ybg" customClass="SellerDashboardScreen" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9ND-kM-3Om">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="144" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vhf-Jb-uHy">
@@ -645,7 +645,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="144"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="wAy-hg-5ic">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="143"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="143.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="p6J-Py-Kna">
@@ -725,11 +725,11 @@
             <objects>
                 <viewController storyboardIdentifier="SellerSignUpScreen" title="Seller Signup" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2aT-dw-Y0G" customClass="SellerSignUpScreen" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P2V-nO-SUf">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="headerimages" id="1l5-4C-Vvr">
-                                <rect key="frame" x="0.0" y="-97" width="320" height="218"/>
+                                <rect key="frame" x="0.0" y="-98" width="320" height="219"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" id="Pch-rD-RpM">
@@ -741,11 +741,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" id="nqo-hO-Lnk">
-                                        <rect key="frame" x="8" y="20" width="18" height="18"/>
+                                        <rect key="frame" x="8" y="19" width="18" height="18"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" id="S80-Tc-yi1" customClass="ACFloatingTextField">
-                                        <rect key="frame" x="34" y="5" width="278" height="35"/>
+                                        <rect key="frame" x="34" y="4" width="278" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1386,7 +1386,7 @@
             <objects>
                 <viewController storyboardIdentifier="BuyerSceen" title="Seller Dashboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8fI-R8-ZMO" customClass="BuyerSceen" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lpt-bt-T5N">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="5Lw-j3-UcN">
@@ -1441,7 +1441,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="Cell" id="yDg-7t-bad">
-                                        <rect key="frame" x="0.0" y="-2" width="80" height="80"/>
+                                        <rect key="frame" x="0.0" y="-2.5" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -1510,7 +1510,7 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="dots" id="L60-PE-yT0">
-                            <inset key="imageInsets" minX="30" minY="25" maxX="10" maxY="25"/>
+                            <inset key="imageInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="logoutAction:" destination="8fI-R8-ZMO" id="wp6-Ep-EFv"/>
@@ -1569,7 +1569,7 @@
             <objects>
                 <viewController storyboardIdentifier="UnapprovedProductsScreen" title="Unapproved Products" useStoryboardIdentifierAsRestorationIdentifier="YES" id="z1j-Ed-iiS" customClass="UnapprovedProductsScreen" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3dd-pL-hvG">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="153" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qvz-vw-r20">
@@ -1581,7 +1581,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="153"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rEf-de-jzK" id="4GX-3H-QSM">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="152"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="152.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" id="JXL-Tm-0RO">
@@ -1699,7 +1699,7 @@
             <objects>
                 <viewController storyboardIdentifier="AddProductScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zqf-B9-C8U" customClass="AddProductScreen" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9iY-G5-0dW">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="77p-Na-G6N">
@@ -1876,7 +1876,7 @@
             <objects>
                 <viewController storyboardIdentifier="AddImageSellerScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="loA-4o-A2l" customClass="AddImageSellerScreen" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n6e-vd-QlC">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="capture Image to upload" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uQl-Rg-Off">
@@ -2373,7 +2373,7 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="dots" id="4mo-3O-BsR">
-                            <inset key="imageInsets" minX="30" minY="25" maxX="0.0" maxY="25"/>
+                            <inset key="imageInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="logoutAction:" destination="v1M-SQ-YRd" id="68i-oB-kXj"/>
@@ -2412,7 +2412,7 @@
             <objects>
                 <viewController storyboardIdentifier="productwiseScreen" title="Category" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8Mk-1Z-Vwp" customClass="productwiseScreen" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iNw-3W-g4p">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="hha-Jd-Lvl">
@@ -2544,7 +2544,7 @@
             <objects>
                 <viewController storyboardIdentifier="ProductDescriptionScreen" title="ProductDetailsScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VZB-1C-XSV" userLabel="ProductDetailsScreen" customClass="ProductDescriptionScreen" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jFV-HP-onj">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="163" sectionHeaderHeight="28" sectionFooterHeight="28" id="XFP-T5-aZy">
@@ -2741,7 +2741,7 @@
             <objects>
                 <viewController storyboardIdentifier="SoldProductScreen" title="Seller Dashboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0fZ-uP-7mU" customClass="SoldProductScreen" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wXQ-4S-WRE">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="144" sectionHeaderHeight="28" sectionFooterHeight="28" id="lRI-Iw-IqC">
@@ -2753,7 +2753,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="144"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NP2-Le-zJD" id="2v6-hv-0RC">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="143"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="143.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" id="Kb9-A4-LIa">
@@ -3218,7 +3218,7 @@
             <objects>
                 <viewController storyboardIdentifier="BuyerLoginScreen" title="Seller login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GJq-Sl-ByD" customClass="BuyerLoginScreen" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wnn-hY-ynH">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerimages" id="MUs-Lo-MTt">
@@ -3387,7 +3387,7 @@
             <objects>
                 <viewController storyboardIdentifier="BuyerSignupScreen" title="Seller Signup" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6o0-NN-emq" customClass="BuyerSignupScreen" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yJY-uL-ecQ">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerimages" id="FnX-rW-L6K">
@@ -3730,9 +3730,4 @@
         <image name="uncheck.png" width="64" height="64"/>
         <image name="user" width="30" height="30"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
-    </simulatedMetricsContainer>
 </document>

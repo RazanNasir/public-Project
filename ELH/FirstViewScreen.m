@@ -64,6 +64,8 @@
 
 - (IBAction)wantToBuyAction:(id)sender {
     
+    [[NSUserDefaults standardUserDefaults]setValue:@"firstScreenBuy" forKey:@"isComingFrom"];
+
     [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"BuyerSceen"] animated:YES];
 }
 
