@@ -93,6 +93,8 @@
 		9BC39C6B1F2114AF000AD520 /* SellerDashboardScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC39C6A1F2114AF000AD520 /* SellerDashboardScreen.m */; };
 		9BC39C701F211B3E000AD520 /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC39C6D1F211B3E000AD520 /* SideMenuViewController.m */; };
 		9BC39C711F211B3E000AD520 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC39C6F1F211B3E000AD520 /* SWRevealViewController.m */; };
+		9BD4639B203B41DB001C1D54 /* ForgotPasswordScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4639A203B41DB001C1D54 /* ForgotPasswordScreen.m */; };
+		9BD4639F203B4B41001C1D54 /* NewPasswordScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4639E203B4B41001C1D54 /* NewPasswordScreen.m */; };
 		9BEDEB721F6C7BD600024CD8 /* Cam.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BEDEB711F6C7BD600024CD8 /* Cam.png */; };
 		9BEE9AB11F27D2120000DD5A /* ImagesNextScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE9AB01F27D2120000DD5A /* ImagesNextScreen.m */; };
 		9BF245B41F7973CF008A98E9 /* camera1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF245B31F7973CF008A98E9 /* camera1.png */; };
@@ -263,6 +265,10 @@
 		9BC39C6D1F211B3E000AD520 /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuViewController.m; sourceTree = "<group>"; };
 		9BC39C6E1F211B3E000AD520 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		9BC39C6F1F211B3E000AD520 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		9BD46399203B41DB001C1D54 /* ForgotPasswordScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordScreen.h; sourceTree = "<group>"; };
+		9BD4639A203B41DB001C1D54 /* ForgotPasswordScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordScreen.m; sourceTree = "<group>"; };
+		9BD4639D203B4B41001C1D54 /* NewPasswordScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPasswordScreen.h; sourceTree = "<group>"; };
+		9BD4639E203B4B41001C1D54 /* NewPasswordScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPasswordScreen.m; sourceTree = "<group>"; };
 		9BEDEB711F6C7BD600024CD8 /* Cam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cam.png; path = ../Cam.png; sourceTree = "<group>"; };
 		9BEE9AAF1F27D2120000DD5A /* ImagesNextScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesNextScreen.h; sourceTree = "<group>"; };
 		9BEE9AB01F27D2120000DD5A /* ImagesNextScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesNextScreen.m; sourceTree = "<group>"; };
@@ -549,6 +555,7 @@
 		9B95B9A31F2665B100761C5C /* Seller */ = {
 			isa = PBXGroup;
 			children = (
+				9BD4639C203B41F2001C1D54 /* Forgot Password */,
 				9BF245B81F797FCC008A98E9 /* Profile */,
 				434B48421F26796700BD9A1B /* unapproved products */,
 				9BC39C721F211B45000AD520 /* Side Menu */,
@@ -740,6 +747,17 @@
 			name = Image;
 			sourceTree = "<group>";
 		};
+		9BD4639C203B41F2001C1D54 /* Forgot Password */ = {
+			isa = PBXGroup;
+			children = (
+				9BD4639D203B4B41001C1D54 /* NewPasswordScreen.h */,
+				9BD4639E203B4B41001C1D54 /* NewPasswordScreen.m */,
+				9BD46399203B41DB001C1D54 /* ForgotPasswordScreen.h */,
+				9BD4639A203B41DB001C1D54 /* ForgotPasswordScreen.m */,
+			);
+			name = "Forgot Password";
+			sourceTree = "<group>";
+		};
 		9BF245B81F797FCC008A98E9 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -846,7 +864,9 @@
 				434B48481F268F1700BD9A1B /* BuyerSceen.m in Sources */,
 				4303E3DD1F27F82D00C10A0C /* AddImageSellerScreen.m in Sources */,
 				43CA95A51F4635C3005701A6 /* NSData+ImageContentType.m in Sources */,
+				9BD4639B203B41DB001C1D54 /* ForgotPasswordScreen.m in Sources */,
 				4311E2F01F2D23B000687D0B /* UIProgressView+AFNetworking.m in Sources */,
+				9BD4639F203B4B41001C1D54 /* NewPasswordScreen.m in Sources */,
 				4311E2ED1F2D23B000687D0B /* UIAlertView+AFNetworking.m in Sources */,
 				43CA95A61F4635C3005701A6 /* NSImage+WebCache.m in Sources */,
 				4311E2EB1F2D23B000687D0B /* AFNetworkActivityIndicatorManager.m in Sources */,

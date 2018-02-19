@@ -73,10 +73,8 @@
         
         [imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",IMAGE_BASE_URL,[[dict valueForKey:@"image_url"] objectAtIndex:indexPath.row]]]
                      placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
-        
     }
-    else
-    {
+    else {
         UIImageView *imageView = (UIImageView *)[cell viewWithTag:200];
         imageView.image=[UIImage imageNamed:[userPhotos objectAtIndex:indexPath.row]];
         UILabel *productLbl =(UILabel*)[cell viewWithTag:300];

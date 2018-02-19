@@ -55,7 +55,10 @@
 - (IBAction)btnSignUp:(id)sender {
     
     [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"SellerSignUpScreen"] animated:YES];
+}
 
+- (IBAction)forgotPasswordAction:(id)sender {
+    [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"ForgotPasswordScreen"] animated:YES];
 }
 
 -(BOOL) textFieldShouldReturn:(ACFloatingTextField *)textField{
