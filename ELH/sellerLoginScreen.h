@@ -22,5 +22,6 @@
 - (IBAction)backBtnActn:(id)sender;
 - (IBAction)btnSignIn:(id)sender;
 - (IBAction)btnSignUp:(id)sender;
+- (IBAction)forgotPasswordAction:(id)sender;
 
 @end
