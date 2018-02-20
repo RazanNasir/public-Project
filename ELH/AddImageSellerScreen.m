@@ -145,20 +145,25 @@
     //                            imageArray = [[NSMutableArray alloc] initWithObjects:img1,img2,img3, nil];
     //                            imageArrayName = [[NSMutableArray alloc] initWithObjects:@"img1.png",@"img2.png",@"img3.png", nil];
     // Do any additional setup after loading the view, typically from a nib.
-    [self creatNewAlbum:imageArray withNames:imageArrayName];
-    
-//    UIAlertController *alertController = [UIAlertController
-//                                          alertControllerWithTitle:@"SUCCESS!"
-//                                          message:@"Successfully upload!"
-//                                          preferredStyle:UIAlertControllerStyleAlert];
-//    UIAlertAction *firstAction = [UIAlertAction actionWithTitle:@"OK"
-//                                                          style:UIAlertActionStyleCancel handler:^(UIAlertAction * action) {
-////                                                              [hud hide:YES];
-//                                                              [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"SellerDashboardScreen"] animated:YES];
-//
-//                                                          }];
-//    [alertController addAction:firstAction];
-//    [self presentViewController:alertController animated:YES completion:nil];
+    if (imageArray.count != 0) {
+        [self creatNewAlbum:imageArray withNames:imageArrayName];
+
+    }
+    else
+    {
+        
+    UIAlertController *alertController = [UIAlertController
+                                          alertControllerWithTitle:@"Error!"
+                                          message:@"Please add images."
+                                          preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *firstAction = [UIAlertAction actionWithTitle:@"OK"
+                                                          style:UIAlertActionStyleCancel handler:^(UIAlertAction * action) {
+//                                                              [hud hide:YES];
+
+                                                          }];
+    [alertController addAction:firstAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+    }
 
 }
 

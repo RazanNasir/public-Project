@@ -27,8 +27,7 @@
     
 //    [self.navigationItem.rightBarButtonItem.customView setAlpha:0.0]; //To hide navigation Bar
     
-    [self.logOutButton setImage:nil];
-//    [self.logOutButton setImage:[UIImage imageNamed:@"dots"]];// Uncomment to show view
+    [self.logOutButton setImage:[UIImage imageNamed:@"dots"]];// Uncomment to show view
     userPhotos = [[NSArray alloc]initWithObjects:@"bed",@"living",@"acce", nil];
     
     [self.navigationController.navigationBar setTitleTextAttributes:

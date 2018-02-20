@@ -105,7 +105,7 @@
 
 - (IBAction)nextBtnActn:(id)sender {
     
-    if (imageArray != nil) {
+    if (imageArray.count != 0) {
         ImagesNextScreen *completedVC = [[self storyboard] instantiateViewControllerWithIdentifier:@"ImagesNextScreen"];
         completedVC.imageArray = imageArray;
         [self.navigationController pushViewController:completedVC animated:YES];

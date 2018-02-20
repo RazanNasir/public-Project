@@ -342,7 +342,7 @@ UIAlertAction *firstAction = [UIAlertAction actionWithTitle:@"OK"style:UIAlertAc
     // you can use different serializer for response.
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     
-    NSDictionary *parameters = @{@"customer_uid": [[NSUserDefaults standardUserDefaults]valueForKey:@"UserID"],@"seller_uid": [dict valueForKey:@"user_id"],@"product_id": [dict valueForKey:@"id"],@"quantity": [NSString stringWithFormat:@"%ld",(long)quantyCount] ,@"pro_amount": [NSString stringWithFormat:@"%ld",(long)totalprice]};
+    NSDictionary *parameters = @{@"customer_uid": [[NSUserDefaults standardUserDefaults]valueForKey:@"UserID"],@"seller_uid": [dict valueForKey:@"user_id"],@"product_id": [dict valueForKey:@"id"],@"quantity": @"1" ,@"pro_amount": [NSString stringWithFormat:@"%ld",(long)totalprice]};
     
     NSLog(@"parameters %@",parameters);
     [manager POST:urlString parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {

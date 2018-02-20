@@ -40,12 +40,14 @@ NSMutableDictionary *dict,*responseDic;
     
     if ([[items objectAtIndex:3] isEqualToString:@"1"]) {
         [self callWebService:[items objectAtIndex:3] :[items objectAtIndex:4]];
-        [self.navigationController popViewControllerAnimated:YES];
+        
+       
     }
     else if([[items objectAtIndex:3] isEqualToString:@"0"])
     {
-        [self callWebService:[items objectAtIndex:3] :[items objectAtIndex:4]];
-        [self.navigationController popViewControllerAnimated:YES];
+//        [self callWebService:[items objectAtIndex:3] :[items objectAtIndex:4]];
+        
+        [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"BuyerSceen"] animated:YES];
 
     }
     if([[[request URL] absoluteString] isEqualToString:@"https://www.sandbox.paypal.com/webscr?cmd=_ap-payment&paykey=AP-99S682643F2716135&order_status=0"]) {
@@ -116,6 +118,19 @@ NSMutableDictionary *dict,*responseDic;
         dict = [responseDic valueForKey:@"message"];
         [hud hide:YES];
         if ([[responseDic valueForKey:@"status"]boolValue] == true) {
+            
+            UIAlertController *alertController = [UIAlertController
+                                                  alertControllerWithTitle:@"Success!"
+                                                  message:[NSString stringWithFormat:@"Your order successful your order no. is %@",orderID]
+                                                  preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *firstAction = [UIAlertAction actionWithTitle:@"Continue Shopping"
+                                                                  style:UIAlertActionStyleCancel handler:^(UIAlertAction * action) {
+                                                                      [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"BuyerSceen"] animated:YES];
+
+                                                                      [hud hide:YES];
+                                                                  }];
+            [alertController addAction:firstAction];
+            [self presentViewController:alertController animated:YES completion:nil];
             
             
             //                [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"SellerDashboardScreen"] animated:YES];
